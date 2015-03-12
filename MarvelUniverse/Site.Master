@@ -1,0 +1,78 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="MarvelUniverse.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    <img src="Images/marvuniv4.jpg" 
+                        
+                        style="width: 939px; max-height: 100%; height: 125px; margin-left: 0px; margin-right: 0px;" />             
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items >
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem Text="Existing Characters" 
+                            Value="Existing Characters">
+                            <asp:MenuItem NavigateUrl="~/HeroesList.aspx" Text="List Of Heroes" 
+                                Value="List Of Heroes"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/VillainsList.aspx" Text="List Of Villains" 
+                                Value="List Of Villains"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/NewExistingCharacter.aspx" 
+                                Text="Add New Character" Value="Add New Character"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Custom Made Characters" 
+                            Value="Custom Made Characters">
+                            <asp:MenuItem NavigateUrl="~/CustomMadeHeroes.aspx" 
+                                Text="List Of Custom Made Heroes" Value="List Of Custom Made Heroes">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/CustomMadeVillains.aspx" 
+                                Text="List Of Custom Made Villains" Value="List Of Custom Made Villains">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/NewCustomMadeCharacter.aspx" 
+                                Text="Add Your Character" Value="Add Your Character"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/showAllUsers.aspx" 
+                            Text="User Profiles" Value="User Profiles"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" Value="About">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Contact" 
+                            Value="Contact" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus0" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <br />
+            </div>
+        </div>
+        
+        <div class="clear">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" >
+                <p>
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

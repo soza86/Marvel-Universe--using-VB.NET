@@ -1,0 +1,18 @@
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\bin\MarvelUniverse.dll
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\bin\MarvelUniverse.pdb
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\bin\MarvelUniverse.xml
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.Resources.resources
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.vbproj.GenerateResource.Cache
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.dll
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.xml
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.pdb
+C:\Users\Σωτήρης\Desktop\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.vbprojResolveAssemblyReference.cache
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\bin\MarvelUniverse.dll
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\bin\MarvelUniverse.pdb
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\bin\MarvelUniverse.xml
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.vbprojResolveAssemblyReference.cache
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.Resources.resources
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.vbproj.GenerateResource.Cache
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.dll
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.xml
+C:\Users\Σωτήρης\Desktop\Metaptyxiako Eggrafa\Module Material\Semester A\Web Scripting and Application Development\Final Assignment\Project\MarvelUniverse\MarvelUniverse\obj\Debug\MarvelUniverse.pdb

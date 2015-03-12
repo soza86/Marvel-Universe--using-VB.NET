@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D4E7D45C-3E47-4316-B1C3-245C35AEAC94}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MarvelUniverse</RootNamespace>
+    <AssemblyName>MarvelUniverse</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MarvelUniverse.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MarvelUniverse.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="AddPictureConfirmation.aspx" />
+    <Content Include="App_Data\MarvelUniverse.accdb" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\MarvelUniverse.dll" />
+    <Content Include="bin\MarvelUniverse.pdb" />
+    <Content Include="bin\MarvelUniverse.xml" />
+    <Content Include="bin\SampleAccessProviders.dll" />
+    <Content Include="CharacterByTag.aspx" />
+    <Content Include="CharacterPictures.aspx" />
+    <Content Include="CharacterPictures\7f4a22c9-8670-4c2f-a327-f2acc6f29b4e.jpg" />
+    <Content Include="CharacterPictures\874500a1-ed84-4c37-9110-66fe80cd6197.jpg" />
+    <Content Include="CharacterPictures\c12f85c5-0173-482b-9b4c-d32f18ed28ad.jpg" />
+    <Content Include="CharacterPictures\ceb7791c-9ed2-4ee5-971d-5c7f6f7b322d.jpg" />
+    <Content Include="CharacterPictures\d95282b6-3b68-4a39-b642-5681477507bf.jpg" />
+    <Content Include="CharacterPictures\hulk1.jpg" />
+    <Content Include="CharacterPictures\hulk2.jpg" />
+    <Content Include="CharacterPictures\redskull1.jpg" />
+    <Content Include="CharacterPictures\redskull2.jpg" />
+    <Content Include="CMCharacterPictures.aspx" />
+    <Content Include="CommentConfirmation.aspx" />
+    <Content Include="Confirmation.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="CustomMadeCharactersPicture\1ac45e17-f4ac-48ff-8fad-b6d78278c80e.jpg" />
+    <Content Include="CustomMadeCharactersPicture\2888af44-f782-4bcc-bcb5-08ad0b78793a.jpg" />
+    <Content Include="CustomMadeCharactersPicture\2d744e35-e27c-4c16-a4d4-3f51bc1f8428.jpg" />
+    <Content Include="CustomMadeCharactersPicture\4688078a-0487-4e9c-83fa-7fa3c529ad9e.jpg" />
+    <Content Include="CustomMadeCharactersPicture\8d47eb3f-0306-4c4a-aefc-a9832d4b3c3d.jpg" />
+    <Content Include="CustomMadeCharactersPicture\a47fb407-40c0-4957-a6ca-81ce95bfeb1d.jpg" />
+    <Content Include="CustomMadeCharactersPicture\c3687525-0de7-41a7-b4ba-5312026168b7.jpg" />
+    <Content Include="CustomMadeCharactersPicture\d06b898f-637d-4802-b16d-01e4e635d2ac.jpg" />
+    <Content Include="CustomMadeCharactersPicture\e15702af-d816-4d6b-afd5-db69c5e29514.jpg" />
+    <Content Include="CustomMadeConfirmation.aspx" />
+    <Content Include="CustomMadeDetails.aspx" />
+    <Content Include="CustomMadeHeroes.aspx" />
+    <Content Include="CustomMadeVillains.aspx" />
+    <Content Include="Images\addpictureconfirmation.jpg" />
+    <Content Include="Images\CMconfirmationImage.jpg" />
+    <Content Include="Images\cmratingicon.png" />
+    <Content Include="Images\ConfirmationPicture.jpg" />
+    <Content Include="Images\empty.png" />
+    <Content Include="Images\imagebutton.jpg" />
+    <Content Include="Images\marveluniverse.jpg" />
+    <Content Include="Images\marveluniverse2.jpg" />
+    <Content Include="Images\marveluniverseback.jpg" />
+    <Content Include="Images\marvuniv4.jpg" />
+    <Content Include="Images\pictureratingicon.png" />
+    <Content Include="Images\ratingicon.png" />
+    <Content Include="NewCustomMadeCharacter.aspx" />
+    <Content Include="Details.aspx" />
+    <Content Include="EditProfile.aspx" />
+    <Content Include="HeroesList.aspx" />
+    <Content Include="Images\details.jpg" />
+    <Content Include="NewExistingCharacter.aspx" />
+    <Content Include="obj\Debug\MarvelUniverse.dll" />
+    <Content Include="obj\Debug\MarvelUniverse.pdb" />
+    <Content Include="obj\Debug\MarvelUniverse.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\MarvelUniverse.xml" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="Picture\0d4389ce-e506-4bda-9817-c4dc113dbb99.jpg" />
+    <Content Include="Picture\1672708c-23c7-4a61-b9c1-0bd3ee2124f9.jpg" />
+    <Content Include="Picture\226649b4-7e53-48c5-a17d-c4f8b9dae243.jpg" />
+    <Content Include="Picture\257f267b-300c-4705-8f4a-70cae26e4912.jpg" />
+    <Content Include="Picture\662b7c58-ca2b-41a0-9d9d-c849b23712d9.jpg" />
+    <Content Include="Picture\99385a17-79e6-4043-b29e-edb0f3650ada.jpg" />
+    <Content Include="Picture\bfe6d630-375d-406c-9fe4-abb622ac94bb.jpg" />
+    <Content Include="Picture\cda15572-149c-4313-86af-5ec9e24d671e.jpg" />
+    <Content Include="Picture\d969b493-5f01-4c73-90ff-b02064677078.jpg" />
+    <Content Include="Picture\drdoom.jpg" />
+    <Content Include="Picture\e3f26b60-b1a3-4984-8eef-42867a8c7918.jpeg" />
+    <Content Include="Picture\hulk.jpg" />
+    <Content Include="Profile.aspx" />
+    <Content Include="ProfilePictures\1668664b-744a-487d-a234-6931ad1c2340.jpg" />
+    <Content Include="ProfilePictures\24abfe6d-7c80-4b0c-88ac-fc94774348cf.jpg" />
+    <Content Include="ProfilePictures\3d24bbad-c036-45fb-882d-76e65ad3247d.jpg" />
+    <Content Include="ProfilePictures\43e0c561-c60e-476a-9def-42469fe9e265.jpg" />
+    <Content Include="ProfilePictures\5a1e459c-db2d-4d59-ae58-d6dbe3ec1013.jpg" />
+    <Content Include="ProfilePictures\8b190203-69b4-47e7-a46c-56d7fe056fa3.jpg" />
+    <Content Include="ProfilePictures\b88e9dde-0b9e-456e-9d2a-efbd08018bb3.jpg" />
+    <Content Include="ProfilePictures\f46e203a-e183-42ab-ac39-a846e645de33.jpg" />
+    <Content Include="ProfilePictures\fa0f24d8-f8f4-4592-b35e-cd767d89785c.jpg" />
+    <Content Include="showAllUsers.aspx" />
+    <Content Include="ShowOneCMPicture.aspx" />
+    <Content Include="ShowOnePicture.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="VillainsList.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.vb">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="AddPictureConfirmation.aspx.designer.vb">
+      <DependentUpon>AddPictureConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddPictureConfirmation.aspx.vb">
+      <DependentUpon>AddPictureConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CharacterByTag.aspx.designer.vb">
+      <DependentUpon>CharacterByTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterByTag.aspx.vb">
+      <DependentUpon>CharacterByTag.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CharacterPictures.aspx.designer.vb">
+      <DependentUpon>CharacterPictures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CharacterPictures.aspx.vb">
+      <DependentUpon>CharacterPictures.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CMCharacterPictures.aspx.designer.vb">
+      <DependentUpon>CMCharacterPictures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMCharacterPictures.aspx.vb">
+      <DependentUpon>CMCharacterPictures.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CommentConfirmation.aspx.designer.vb">
+      <DependentUpon>CommentConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommentConfirmation.aspx.vb">
+      <DependentUpon>CommentConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Confirmation.aspx.designer.vb">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation.aspx.vb">
+      <DependentUpon>Confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CustomMadeConfirmation.aspx.designer.vb">
+      <DependentUpon>CustomMadeConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMadeConfirmation.aspx.vb">
+      <DependentUpon>CustomMadeConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CustomMadeDetails.aspx.designer.vb">
+      <DependentUpon>CustomMadeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMadeDetails.aspx.vb">
+      <DependentUpon>CustomMadeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CustomMadeHeroes.aspx.designer.vb">
+      <DependentUpon>CustomMadeHeroes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMadeHeroes.aspx.vb">
+      <DependentUpon>CustomMadeHeroes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CustomMadeVillains.aspx.designer.vb">
+      <DependentUpon>CustomMadeVillains.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomMadeVillains.aspx.vb">
+      <DependentUpon>CustomMadeVillains.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="NewCustomMadeCharacter.aspx.designer.vb">
+      <DependentUpon>NewCustomMadeCharacter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewCustomMadeCharacter.aspx.vb">
+      <DependentUpon>NewCustomMadeCharacter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.designer.vb">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.vb">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EditProfile.aspx.designer.vb">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProfile.aspx.vb">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HeroesList.aspx.designer.vb">
+      <DependentUpon>HeroesList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HeroesList.aspx.vb">
+      <DependentUpon>HeroesList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewExistingCharacter.aspx.designer.vb">
+      <DependentUpon>NewExistingCharacter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewExistingCharacter.aspx.vb">
+      <DependentUpon>NewExistingCharacter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.vb">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.vb">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="showAllUsers.aspx.designer.vb">
+      <DependentUpon>showAllUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showAllUsers.aspx.vb">
+      <DependentUpon>showAllUsers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ShowOneCMPicture.aspx.designer.vb">
+      <DependentUpon>ShowOneCMPicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowOneCMPicture.aspx.vb">
+      <DependentUpon>ShowOneCMPicture.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ShowOnePicture.aspx.designer.vb">
+      <DependentUpon>ShowOnePicture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowOnePicture.aspx.vb">
+      <DependentUpon>ShowOnePicture.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VillainsList.aspx.designer.vb">
+      <DependentUpon>VillainsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VillainsList.aspx.vb">
+      <DependentUpon>VillainsList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\MarvelUniverse.Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\MarvelUniverse.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\MarvelUniverse.vbprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2871</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
